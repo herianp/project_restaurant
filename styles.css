@@ -1,0 +1,8 @@
+body {
+    color: #333; /* change font color */
+    background-color: #f4f4f4; /* change background color */
+}
+.center {
+    text-align: center;
+    border: 3px solid green;
+}
