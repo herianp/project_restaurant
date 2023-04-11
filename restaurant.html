@@ -1,152 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <title>Restaurant</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <meta charset="UTF-8"/>
+    <title>Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
 <header>
-  <h1>Restaurace u Bobra</h1>
+    <h1>Restaurace u Bobra</h1>
 </header>
 <div class="flex-container">
-  <section class="menu">
-    <h1>MENU</h1>
-    <div class="menu-box">
-      <h3>Meal list</h3>
-    </div>
-    <div class="menu-box">
-      <h3>Specialty</h3>
-    </div>
-    <div class="menu-box">
-      <h3>Reservation</h3>
-    </div>
-    <div class="menu-box">
-      <h3>Events</h3>
-    </div>
-    <div class="menu-box">
-      <h3>Reviews</h3>
-    </div>
-  </section>
-  <section class="content">
-    <!--        Zde by se zobrazoval kontent podle toho na co by se v menu kliklo-->
-    <h1>Meal list</h1>
+    <section class="menu" itemscope itemtype="http://schema.org/Menu">
+        <h1>MENU</h1>
+        <div class="menu-box">
+            <h3>Meal list</h3>
+        </div>
+        <div class="menu-box">
+            <h3>Specialty</h3>
+        </div>
+        <div class="menu-box">
+            <h3>Reservation</h3>
+        </div>
+        <div class="menu-box">
+            <h3>Events</h3>
+        </div>
+        <div class="menu-box">
+            <h3>Reviews</h3>
+        </div>
+    </section>
+    <section class="content">
+        <!--        Zde by se zobrazoval kontent podle toho na co by se v menu kliklo-->
+        <h1>Meal list</h1>
 
-    <div class="content-box">
-      <section class="content-card">
-        <h2>Meal</h2>
-        <div class="content-card-box">
-          <p>Fries and burger</p>
-          <p>9$</p>
-        </div>
+        <div class="content-box" itemscope itemtype="http://schema.org/ItemList">
+            <section class="content-card">
+                <h2>Meal</h2>
+                <div class="content-card-box" itemprop="itemListElement" itemscope
+                     itemtype="http://schema.org/MenuItem">
+                    <p>Fries and burger</p>
+                    <p>9$</p>
+                </div>
 
-        <div class="content-card-box">
-          <p>Greek salad</p>
-          <p>4$</p>
-        </div>
-        <div class="content-card-box">
-          <p>Truffle risotto</p>
-          <p>8$</p>
-        </div>
+                <div class="content-card-box" itemprop="itemListElement" itemscope
+                     itemtype="http://schema.org/MenuItem">
+                    <p>Greek salad</p>
+                    <p>4$</p>
+                </div>
+                <div class="content-card-box" itemprop="itemListElement" itemscope
+                     itemtype="http://schema.org/MenuItem">
+                    <p>Truffle risotto</p>
+                    <p>8$</p>
+                </div>
 
-        <div class="content-card-box">
-          <p>Tagliatelle in creamy sauce with smoked salmon and zucchini</p>
-          <p>12$</p>
-        </div>
-      </section>
+                <div class="content-card-box" itemprop="itemListElement" itemscope
+                     itemtype="http://schema.org/MenuItem">
+                    <p>Tagliatelle in creamy sauce with smoked salmon and zucchini</p>
+                    <p>12$</p>
+                </div>
+            </section>
 
-      <section class="content-card">
-        <h2>Drinks</h2>
-        <div class="content-card-box">
-          <p>Water</p>
-          <p>1.5$</p>
+            <section class="content-card">
+                <h2>Drinks</h2>
+                <div class="content-card-box" itemprop="itemListElement" itemscope
+                     itemtype="http://schema.org/MenuItem">
+                    <p>Water</p>
+                    <p>1.5$</p>
+                </div>
+                <div class="content-card-box" itemprop="itemListElement" itemscope
+                     itemtype="http://schema.org/MenuItem">
+                    <p>Kofola</p>
+                    <p>2$</p>
+                </div>
+                <div class="content-card-box" itemprop="itemListElement" itemscope
+                     itemtype="http://schema.org/MenuItem">
+                    <p>Pilsner Urquell</p>
+                    <p>4$</p>
+                </div>
+                <div class="content-card-box" itemprop="itemListElement" itemscope
+                     itemtype="http://schema.org/MenuItem">
+                    <p>Kozel</p>
+                    <p>3$</p>
+                </div>
+            </section>
         </div>
-        <div class="content-card-box">
-          <p>Kofola</p>
-          <p>2$</p>
-        </div>
-        <div class="content-card-box">
-          <p>Pilsner Urquell</p>
-          <p>4$</p>
-        </div>
-        <div class="content-card-box">
-          <p>Kozel</p>
-          <p>3$</p>
-        </div>
-      </section>
-    </div>
-  </section>
-  <aside>
-    <h2>About us</h2>
-    <p>
-      We like football fans the best, because we are right next to the SK
-      Slavia Prague stadium.
-    </p>
-    <h2>Place</h2>
-    <img src="resources/restaurant_place.png"/>
-    <strong>Address:</strong><a
-          href="https://www.google.com/maps/place/U+Bobra/@50.1100438,14.5981384,18.75z/data=!4m6!3m5!1s0x470bf2a271c5cf5b:0x8df19eaa6fed261b!8m2!3d50.1101348!4d14.5990239!16s%2Fg%2F11cs39yq1d?authuser=0">
-    Božanovská 2098, Prague 20</a>
-    <h2>Opening hours</h2>
-    <table>
-      <tr>
-        <td>FRI</td>
-        <td>SAT</td>
-        <td>SUN</td>
-      </tr>
-      <tr>
-        <td>
-          <time>10:30</time>
-          -
-          <time>23:00</time>
-        </td>
-        <td>
-          <time>10:30</time>
-          -
-          <time>22:00</time>
-        </td>
-        <td>
-          <time>10:30</time>
-          -
-          <time>22:00</time>
-        </td>
-      </tr>
-    </table>
-  </aside>
+    </section>
+    <aside itemscope itemtype="https://schema.org/Restaurant">
+        <h2>About us</h2>
+        <p>
+            We like football fans the best, because we are right next to the SK
+            Slavia Prague stadium.
+        </p>
+        <h2>Place</h2>
+        <img src="resources/restaurant_place.png"/>
+        <strong>Address:</strong><a itemprop="address"
+                                    href="https://www.google.com/maps/place/U+Bobra/@50.1100438,14.5981384,18.75z/data=!4m6!3m5!1s0x470bf2a271c5cf5b:0x8df19eaa6fed261b!8m2!3d50.1101348!4d14.5990239!16s%2Fg%2F11cs39yq1d?authuser=0">
+        <span itemprop="streetAddress">Božanovská 2098</span>,<span itemprop="addressLocality">Prague</span> <span
+            itemprop="postalCode">20</span></a>
+        <h2>Opening hours</h2>
+        <table itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+            <tr>
+                <td><span itemprop="dayOfWeek" content="Friday">FRI</span></td>
+                <td><span itemprop="dayOfWeek" content="Saturday">SAT</span></td>
+                <td><span itemprop="dayOfWeek" content="Sunday">SUN</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <time itemprop="opens" datetime="10:30">10:30</time>
+                    -
+                    <time itemprop="closes" datetime="23:00">23:00</time>
+                </td>
+                <td>
+                    <time itemprop="opens" datetime="10:30">10:30</time>
+                    -
+                    <time itemprop="closes" datetime="22:00">22:00</time>
+                </td>
+                <td>
+                    <time itemprop="opens" datetime="10:30">10:30</time>
+                    -
+                    <time itemprop="closes" datetime="22:00">22:00</time>
+                </td>
+            </tr>
+        </table>
+    </aside>
 </div>
 <!--    <h3>Menu</h3>-->
 <!--    <h3>Open hours</h3>-->
 <!--    <h3>News</h3>-->
 <footer>
-  <article class="contacts">
-    <h2>Contacts</h2>
-    <div class="contacts-box">
-      <div class="contact-card">
-        <h3>Chief</h3>
-        <ul>
-          <li>John Frys</li>
-          <li>phone: + 420 908 239 093</li>
-        </ul>
-      </div>
-      <div class="contact-card">
-        <h3>Manager</h3>
-        <ul>
-          <li>Voita Mlejnek</li>
-          <li>phone: + 420 809 444 031</li>
-        </ul>
-      </div>
-      <div class="contact-card">
-        <h3>Orders</h3>
-        <ul>
-          <li>Lucas Plucha</li>
-          <li>phone: + 420 603 432 500</li>
-        </ul>
-      </div>
-    </div>
-  </article>
-  <article class="copyright">
-    <p>@Copyrights czu-team</p>
-  </article>
+    <article class="contacts">
+        <h2>Contacts</h2>
+        <div class="contacts-box">
+            <div class="contact-card">
+                <h3>Chief</h3>
+                <ul>
+                    <li>John Frys</li>
+                    <li>phone: + 420 908 239 093</li>
+                </ul>
+            </div>
+            <div class="contact-card">
+                <h3>Manager</h3>
+                <ul>
+                    <li>Voita Mlejnek</li>
+                    <li>phone: + 420 809 444 031</li>
+                </ul>
+            </div>
+            <div class="contact-card">
+                <h3>Orders</h3>
+                <ul>
+                    <li>Lucas Plucha</li>
+                    <li>phone: + 420 603 432 500</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <article class="copyright">
+        <p>@Copyrights czu-team</p>
+    </article>
 </footer>
 </body>
 </html>
