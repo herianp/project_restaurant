@@ -5,7 +5,6 @@ body {
   flex-direction: column;
   margin: 0;
 }
-/* HEADER-START*/
 header {
   background-color: brown;
   display: flex;
@@ -15,20 +14,14 @@ header {
   padding: 0;
   flex: 0.5;
 }
-
 header h1 {
   margin: 0;
 }
-
-/* HEADER-END*/
-
 .flex-container {
   display: flex;
   flex-direction: row;
   flex: 10;
 }
-
-/* MENU-START*/
 .flex-container .menu {
   display: flex;
   flex-direction: column;
@@ -36,7 +29,6 @@ header h1 {
   flex: 2;
   background-color: wheat;
 }
-
 .menu .menu-box {
   min-width: 80%;
   background-color: white;
@@ -46,13 +38,10 @@ header h1 {
   justify-content: center;
   align-items: center;
 }
-
 .menu-box h3 {
   margin: 0;
   padding: 10px;
 }
-/* MENU-END*/
-/* CONTENT-START*/
 .flex-container .content {
   flex: 8;
   background-color: saddlebrown;
@@ -60,16 +49,13 @@ header h1 {
   flex-direction: column;
   align-items: center;
 }
-
 .content h1 {
   margin: 20px 0 0 0;
 }
-
 .content .content-box {
   display: flex;
   min-width: 100%;
 }
-
 .content-box .content-card {
   flex: 5;
   display: flex;
@@ -78,25 +64,19 @@ header h1 {
   align-items: center;
   margin: 0 20px 20px 20px;
 }
-
 .content-card h2 {
   margin: 0;
 }
-
 .content-card .content-card-box {
   padding: 10px;
   margin: 10px;
   background-color: white;
   min-width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
-/* CONTENT-END*/
-
-/* ASIDE-START */
 .flex-container aside {
   flex: 2;
   background-color: gray;
@@ -104,19 +84,13 @@ header h1 {
   flex-direction: column;
   align-items: center;
 }
-
 aside p {
   padding: 0 10%;
   margin: 5px;
 }
-
 aside img {
   width: 80%;
 }
-
-/* ASIDE-END */
-
-/* FOOTER-START */
 footer {
   flex: 0.5;
   display: flex;
@@ -124,32 +98,29 @@ footer {
   flex-direction: column;
   background-color: aqua;
 }
-
 footer .contacts-box {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-
 footer .contact-card {
   display: flex;
   flex-direction: column;
 }
-
 footer .copyright {
   padding: 5px 0 0 10px;
   font-style: italic;
 }
-
 footer h2 {
   margin: 0 10px;
 }
-
 footer h3 {
   margin: 0;
 }
-
 footer p {
   margin: 0;
 }
-/* FOOTER-END */
+table, th, td {
+  border:1px solid black;
+  color: black;
+}
